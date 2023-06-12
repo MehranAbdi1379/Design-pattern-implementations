@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator pattern", "Iterato
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy pattern", "Strategy pattern\Strategy pattern.csproj", "{3920667A-9376-4452-89DA-C787BC4438D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template method pattern", "Template method pattern\Template method pattern.csproj", "{D40F28B0-F660-43DD-A067-87B6E6C7D4BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template method pattern", "Template method pattern\Template method pattern.csproj", "{D40F28B0-F660-43DD-A067-87B6E6C7D4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command pattern", "Common pattern\Command pattern.csproj", "{718CDEBC-D025-44A3-BC63-1825FA309473}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D40F28B0-F660-43DD-A067-87B6E6C7D4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D40F28B0-F660-43DD-A067-87B6E6C7D4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D40F28B0-F660-43DD-A067-87B6E6C7D4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{718CDEBC-D025-44A3-BC63-1825FA309473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718CDEBC-D025-44A3-BC63-1825FA309473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718CDEBC-D025-44A3-BC63-1825FA309473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718CDEBC-D025-44A3-BC63-1825FA309473}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
