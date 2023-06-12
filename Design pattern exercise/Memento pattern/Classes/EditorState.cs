@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_pattern_exercise.Classes
+namespace Design_pattern_exercise.Memento_pattern.Classes
 {
     public class EditorState
     {

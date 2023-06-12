@@ -4,34 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_pattern_exercise.Classes
+namespace Design_pattern_exercise.Memento_pattern.Classes
 {
     public class Editor
     {
         public Editor()
         {
             History = new EditorHistory();
-            NewState("", "");
-        }
-        public EditorHistory History { get; private set; }
-
-        public void NewState(string title , string description)
-        {
-            var state = new EditorState();
-            state.Title = title;
-            state.Description = description;
-
-            History.Push(state);
         }
 
-        public EditorState Undo()
+        public EditorHistory History{ get; set; }
+
+        public void Push(string title , string description)
         {
-            if(History.editorStates.Count>1)
-            {
-                History.Pop();
-            }
-            
-            return History.Peek();
+            History.Push(title, description);
+        }
+
+        public EditorState Pop()
+        {
+            return History.Pop();
         }
     }
 }
