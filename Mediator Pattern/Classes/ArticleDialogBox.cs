@@ -17,7 +17,8 @@ namespace Mediator_Pattern.Classes
             articleListBox = new ArticleListBox();
             titleTextBox = new TitleTextBox();
             saveButton = new SaveButton();
-            articleListBox.attach()
+            articleListBox.attach(new SelectedObserver(saveButton, articleListBox, titleTextBox));
+            titleTextBox.attach(new TitleChangeObserver(saveButton, articleListBox, titleTextBox));
         }
 
         public void SimulateUserInteraction()
@@ -34,19 +35,6 @@ namespace Mediator_Pattern.Classes
             Console.WriteLine(articleListBox.Selection);
             Console.WriteLine(titleTextBox.Content);
             Console.WriteLine(saveButton.IsActivated);
-        }
-
-        private void SelectListBox()
-        {
-            
-        }
-
-        private void ChangeTitle()
-        {
-            if (titleTextBox.Content.Length > 0)
-                saveButton.IsActivated = true;
-            else
-                saveButton.IsActivated = false;
         }
     }
 }
